@@ -1,4 +1,34 @@
 .about-me-section-container {
     height: calc(100vh - 100px);
-
+    display: flex;
 }
+
+.about-me-section-content {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 2.5%;
+}
+
+.about-me-heading {
+    font-size: 2rem;
+}
+
+.about-me-description-container {
+}
+
+.about-me-description-paragraph {
+    font-size: 1.25rem;
+    color: gray;
+    line-height: 1.75;
+    width: 85%;
+}
+
+.about-me-section-card {
+    border-radius: 10px;
+    border: 1px solid red;
+    flex: 1;
+    margin: 1.5%;
+}
+

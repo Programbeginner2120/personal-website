@@ -1,3 +1,25 @@
-<div class="about-me-section-container">
-    THIS IS SOME CONTENT
+<!-- about-me-section.component.html -->
+<div [@fadeInUp]="isVisible() ? 'visible' : 'hidden'" class="about-me-section-container">
+    <div class="about-me-section-content">
+        <h2 class="about-me-heading">About Me</h2>
+        <div class="about-me-description-container">
+            <p class="about-me-description-paragraph about-me-description-paragraph-1">
+                I'm a passionate software engineer with 5+ years of experience building web applications, 
+                mobile apps, and distributed systems. I love turning complex problems into simple, 
+                beautiful solutions.
+            </p>
+            <p class="about-me-description-paragraph about-me-description-paragraph-2">
+                When I'm not coding, you can find me hiking, reading tech blogs, or experimenting with new technologies. 
+                I'm always eager to learn and take on new challenges.
+            </p>
+        </div>
+        <div class="technologies-info-container">
+            <h2 class="technologies-title">Technologies I Work With</h2>
+            <div class="technologies-container">
+                <div>This is a placeholder for content I will put in later!</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="about-me-section-card"></div>
 </div>
