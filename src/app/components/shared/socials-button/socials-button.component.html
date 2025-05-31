@@ -1,0 +1,12 @@
+<a
+  [href]="socialsButton().isEmail ? 'mailto:' + socialsButton().href : socialsButton().href"
+  target="_blank"
+  rel="noopener noreferrer"
+  class="socials-button btn"
+>
+    @if (hasIconClasses()) {
+        <i [class]="socialsButton().iconClasses"></i>
+    } @else if (hasLabel()) {
+        {{ socialsButton().label }}
+    }
+</a>
