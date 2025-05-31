@@ -17,13 +17,13 @@ export class MainSectionComponent {
             isEmail: false
         },
         {
-            href: 'https://github.com/Programbeginner2120',
-            iconClasses: ["fab", "fa-github"],
+            href: 'https://www.linkedin.com/in/matthew-r-killeen',
+            iconClasses: ["fab", "fa-linkedin"],
             isEmail: false
         },
         {
-            href: 'https://github.com/Programbeginner2120',
-            iconClasses: ["fab", "fa-github"],
+            href: 'mailto:Matthewkilleen99@gmail.com',
+            iconClasses: ["fa-solid", "fa-envelope"],
             isEmail: false
         }
     ];

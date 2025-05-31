@@ -6,6 +6,10 @@
     margin: 5% 0;
 }
 
+.main-section-title, .main-section-description {
+    text-align: center;
+}
+
 .main-section-title {
     font-weight: bold;
     font-size: 4.5rem;
@@ -17,4 +21,9 @@
     padding: 0;
     font-size: 1.5rem;
     color: gray;
+}
+
+.main-section-socials-links-container {
+    display: flex;
+    gap: 8px;
 }
