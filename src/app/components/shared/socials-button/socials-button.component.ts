@@ -1,5 +1,5 @@
 import { Component, computed, input } from '@angular/core';
-import { SocialsButton } from '../../../../interfaces/buttons.interface';
+import { SocialsButton } from '../../../interfaces/buttons.interface';
 
 @Component({
   selector: 'app-socials-button',

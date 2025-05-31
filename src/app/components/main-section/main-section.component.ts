@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { SocialsButton } from '../../interfaces/buttons.interface';
-import { SocialsButtonComponent } from './components/socials-button/socials-button.component';
+import { SocialsButtonComponent } from '../shared/socials-button/socials-button.component';
+import { AppButtonComponent } from '../shared/app-button/app-button.component';
 
 @Component({
     selector: 'app-main-section',
-    imports: [SocialsButtonComponent],
+    imports: [SocialsButtonComponent, AppButtonComponent],
     templateUrl: './main-section.component.html',
     styleUrl: './main-section.component.scss'
 })
@@ -27,5 +28,9 @@ export class MainSectionComponent {
             isEmail: false
         }
     ];
+
+    handleButtonClick() {
+        console.log("BUTTON CLICKED!");
+    }
 
 }

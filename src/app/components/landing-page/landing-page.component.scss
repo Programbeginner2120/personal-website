@@ -1,3 +1,12 @@
 .landing-page-container {
     height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+}
+
+app-main-section {
+    flex: 1;
 }
