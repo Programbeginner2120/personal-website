@@ -5,8 +5,20 @@
         and solving complex problems
     </p>
     <div class="main-section-buttons-container">
-        <app-button variant="dark" size="lg" label="View My Work" (clicked)="handleButtonClick()" />
-        <app-button variant="dark" size="lg" label="View My Work" (clicked)="handleButtonClick()" />
+        <app-button 
+            variant="dark" 
+            size="lg" 
+            label="View My Work" 
+            (clicked)="handleButtonClick()" 
+        />
+        <app-download-button 
+            fileUri="/assets/test.txt" 
+            filename="Test"
+            variant="dark" 
+            size="lg" 
+            label="Download Resume" 
+            (clicked)="handleDownloadButtonClick($event)" 
+        />
     </div>
     <div class="main-section-socials-links-container">
         @for (socialsButton of socialsButtons; track socialsButton) {

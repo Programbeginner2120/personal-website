@@ -1,8 +1,5 @@
 import { Component, computed, input, output, signal } from '@angular/core';
-
-type ButtonType = 'button' | 'submit' | 'reset';
-type ButtonVariant = 'primary' | 'secondary' | 'success' | 'danger' | 'warning' | 'info' | 'light' | 'dark';
-type ButtonSize = 'sm' | 'md' | 'lg';
+import { ButtonSize, ButtonType, ButtonVariant } from '../../../interfaces/buttons.interface';
 
 @Component({
   selector: 'app-button',

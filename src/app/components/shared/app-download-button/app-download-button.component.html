@@ -1,1 +1,13 @@
-<p>app-download-button works!</p>
+<app-button 
+    [type]="type()"
+    [disabled]="disabled()"
+    [loading]="loading()"
+    [variant]="variant()"
+    [size]="size()"
+    [outline]="outline()"
+    [block]="block()"
+    [icon]="icon()"
+    [label]="label()"
+    [customClass]="customClass()"
+    (clicked)="handleClick()"
+/>
