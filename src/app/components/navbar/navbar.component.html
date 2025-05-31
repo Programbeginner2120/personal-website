@@ -1,0 +1,33 @@
+<nav class="main-nav">
+    <ul class="main-nav-ul">
+        @for (button of routeButtons(); track button.label) {
+            <li class="main-nav-ul-li">
+            @if (button.fragment && !button.route) {
+                <a 
+                    [routerLink]="[]"
+                    [fragment]="button.fragment">
+                    {{ button.label }}
+                </a>
+            } @else if (button.route && !button.fragment) {
+                <a 
+                    [routerLink]="[button.route]">
+                    {{ button.label }}
+                </a>
+            } @else if (button.route && button.fragment) {
+                <a 
+                    [routerLink]="[button.route]"
+                    [fragment]="button.fragment">
+                    {{ button.label }}
+                </a>
+            } @else if (button.external) {
+                <a 
+                    [href]="button.route"
+                    target="_blank"
+                    rel="noopener noreferrer">
+                    {{ button.label }}
+                </a>
+            }
+                </li>
+        }
+    </ul>
+</nav>

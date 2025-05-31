@@ -1,0 +1,13 @@
+.app-layout {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* full height of the viewport */
+}
+
+app-navbar {
+  flex-shrink: 0; /* don't shrink the navbar */
+}
+
+.router-content {
+  flex: 1; /* take up the remaining space */
+}
