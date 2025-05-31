@@ -8,6 +8,8 @@
         <p>REPLACE ME!</p>
     </div>
     <div class="main-section-socials-links-container">
-        <p>REPLACE ME!</p>
+        @for (socialsButton of socialsButtons; track socialsButton) {
+            <app-socials-button [socialsButton]="socialsButton" />
+        }
     </div>
 </div>
