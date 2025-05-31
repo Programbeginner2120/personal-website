@@ -1,13 +1,14 @@
 .app-layout {
   display: flex;
   flex-direction: column;
-  height: 100vh; /* full height of the viewport */
+  min-height: 100vh; /* full height of the viewport */
   background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
 }
 
 app-header {
   position: sticky;
   top: 0;
+  z-index: 100;
 }
 
 app-navbar {
