@@ -59,6 +59,7 @@ export class FeaturedProjectsSectionComponent {
             return {
                 title: project['title'],
                 description: project['description'],
+                imageUri: project['imageUri'],
                 technologies: project['technologies'] as string[],
                 buttons: (project['buttons'] as any[]).map(button => {
                     return {

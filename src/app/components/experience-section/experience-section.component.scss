@@ -1,5 +1,7 @@
 .experience-section-container {
+    min-height: calc(100vh - 100px);
     height: fit-content;
+    width: 100vw;
 }
 
 .experience-heading-info-container {
@@ -27,5 +29,6 @@
 .experience-cards {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 24px;
 }

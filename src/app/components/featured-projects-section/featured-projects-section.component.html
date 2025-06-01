@@ -5,7 +5,7 @@
     </div>
 
     @if (featuredProjects()) {
-        <div class="experience-cards">
+        <div class="featured-project-cards">
             @for (featuredProject of featuredProjects(); track featuredProject) {
                 <app-featured-project-card [featuredProject]="featuredProject" />
             }
