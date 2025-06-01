@@ -7,6 +7,7 @@ export interface SocialsButton {
     iconClasses?: string[];
     label?: string;
     isEmail: boolean;
+    displayLink?: string;
 }
 
 export interface RouteButton {
