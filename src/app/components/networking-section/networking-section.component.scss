@@ -1,0 +1,34 @@
+.networking-section-container {
+    min-height: calc(100vh - 100px);
+    height: fit-content;
+    width: 100vw;
+}
+
+.networking-heading-info-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 5%;
+}
+
+.networking-heading, .networking-description {
+    margin: 0;
+    padding: 0;
+}
+
+.networking-heading {
+    font-size: 2rem;
+}
+
+.networking-description {
+    font-size: 1.5rem;
+    color: gray;
+}
+
+.socials-buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin: 0 5%;
+}

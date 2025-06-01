@@ -3,10 +3,15 @@
   target="_blank"
   rel="noopener noreferrer"
   class="socials-button btn"
+  [ngClass]="mode()"
 >
     @if (hasIconClasses()) {
-        <i [class]="socialsButton().iconClasses"></i>
-    } @else if (hasLabel()) {
-        {{ socialsButton().label }}
+        <i class="socials-icon" [ngClass]="iconClassesExtended()"></i>
+    } 
+    @if (hasLabel()) {
+        <div class="socials-label">{{ socialsButton().label }}</div>
+    }
+    @if (hasDisplayLink()) {
+        <div class="display-link">{{ socialsButton().displayLink }}</div>
     }
 </a>

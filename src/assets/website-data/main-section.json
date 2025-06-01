@@ -13,9 +13,9 @@
             "isEmail": false
         },
         {
-            "href": "mailto:Matthewkilleen99@gmail.com",
+            "href": "Matthewkilleen99@gmail.com",
             "iconClasses": ["fa-solid", "fa-envelope"],
-            "isEmail": false
+            "isEmail": true
         }
     ]
 }
