@@ -4,5 +4,9 @@
         <p class="experience-description">My professional journey and the impact I've made</p>
     </div>
 
-    <!-- TODO: FILL WITH OTHER CONTENT-->
+    <div class="experience-cards">
+        @for (experience of experiences; track experience) {
+        <app-experience-card [experience]="experience" />
+        }
+    </div>
 </div>

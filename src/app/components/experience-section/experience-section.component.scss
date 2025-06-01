@@ -1,5 +1,5 @@
 .experience-section-container {
-    height: calc(100vh - 100px);
+    height: fit-content;
 }
 
 .experience-heading-info-container {
@@ -7,6 +7,7 @@
     flex-direction: column;
     align-items: center;
     gap: 24px;
+    margin-bottom: 5%;
 }
 
 .experience-heading, .experience-description {
@@ -21,4 +22,10 @@
 .experience-description {
     font-size: 1.5rem;
     color: gray;
+}
+
+.experience-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
