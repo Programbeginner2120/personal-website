@@ -18,7 +18,12 @@
         </div>
         <div class="featured-project-card-content-buttons-container">
             @for (button of featuredProject().buttons; track button) {
-                <div>This is a placeholder!</div>
+                <app-route-button
+                    variant="dark" 
+                    size="lg" 
+                    [label]="button.label"
+                    [routeButton]="button"
+                />
             }
         </div>
     </div>
