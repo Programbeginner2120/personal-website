@@ -6,9 +6,11 @@
 }
 
 .featured-project-card-image-portion {
+    aspect-ratio: 1 / 1;
     min-height: 350px;
-    width: 100%;
     border-radius: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .featured-project-card-content-portion {
