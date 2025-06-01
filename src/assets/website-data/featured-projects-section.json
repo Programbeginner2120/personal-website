@@ -1,0 +1,72 @@
+{
+    "title": "Featured Projects",
+    "description": "Some of my recent work that I'm proud of",
+    "featuredProjects": [
+        {
+            "title": "Placeholder",
+            "description": "Placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder",
+            "imageUri": "/assets/matthew-killeen-profile-image.jpeg",
+            "technologies": [
+                "Java",
+                "Angular",
+                "AWS"
+            ],
+            "buttons": [
+                {
+                    "label": "Placeholder",
+                    "route": "https://www.google.com",
+                    "external": true
+                },
+                {
+                    "label": "Placeholder",
+                    "route": "https://www.google.com",
+                    "external": true
+                }
+            ]
+        },
+        {
+            "title": "Placeholder",
+            "description": "Placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder",
+            "imageUri": "/assets/matthew-killeen-profile-image.jpeg",
+            "technologies": [
+                "Java",
+                "Angular",
+                "AWS"
+            ],
+            "buttons": [
+                {
+                    "label": "Placeholder",
+                    "route": "https://www.google.com",
+                    "external": true
+                },
+                {
+                    "label": "Placeholder",
+                    "route": "https://www.google.com",
+                    "external": true
+                }
+            ]
+        },
+        {
+            "title": "Placeholder",
+            "description": "Placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder placeholder",
+            "imageUri": "/assets/matthew-killeen-profile-image.jpeg",
+            "technologies": [
+                "Java",
+                "Angular",
+                "AWS"
+            ],
+            "buttons": [
+                {
+                    "label": "Placeholder",
+                    "route": "https://www.google.com",
+                    "external": true
+                },
+                {
+                    "label": "Placeholder",
+                    "route": "https://www.google.com",
+                    "external": true
+                }
+            ]
+        }
+    ]
+}
