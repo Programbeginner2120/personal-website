@@ -1,1 +1,14 @@
-<p>featured-projects-section works!</p>
+<div [@fadeInUp]="isVisible() ? 'visible' : 'hidden'" class="featured-projects-section-container">
+    <div class="featured-projects-heading-info-container">
+        <h2 class="featured-projects-heading">{{ title() }}</h2>
+        <p class="featured-projects-description">{{ description() }}</p>
+    </div>
+
+    @if (featuredProjects()) {
+        <div class="experience-cards">
+            @for (featuredProject of featuredProjects(); track featuredProject) {
+                <div class="placeholder">Placeholder!</div>
+            }
+        </div>
+    }
+</div>
