@@ -14,9 +14,11 @@
             </p>
         </div>
         <div class="technologies-info-container">
-            <h2 class="technologies-title">Technologies I Work With</h2>
+            <h2 class="technologies-heading">Technologies I Work With</h2>
             <div class="technologies-container">
-                <div>This is a placeholder for content I will put in later!</div>
+                @for (technology of technologies; track technology) {
+                    <app-label-badge [label]="technology" />
+                }
             </div>
         </div>
     </div>

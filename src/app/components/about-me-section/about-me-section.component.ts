@@ -1,11 +1,13 @@
-import { Component, ElementRef, OnDestroy, Signal, WritableSignal, afterNextRender, inject, signal } from '@angular/core';
+import { Component, ElementRef, OnDestroy, Signal, WritableSignal, afterNextRender, inject, input, signal } from '@angular/core';
 import { ScrollAnimationService } from '../../services/shared/scroll-animation/scroll-animation.service';
 import { trigger, state, style, transition, animate } from '@angular/animations';
+import { LabelBadgeComponent } from '../shared/label-badge/label-badge.component';
 
 @Component({
   selector: 'app-about-me-section',
   templateUrl: './about-me-section.component.html',
   styleUrl: './about-me-section.component.scss',
+  imports: [LabelBadgeComponent],
   animations: [
     trigger('fadeInUp', [
       state('hidden', style({ opacity: 0, transform: 'translateY(30px)' })),
@@ -16,20 +18,33 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
 })
 export class AboutMeSectionComponent implements OnDestroy {
 
-  private scrollService = inject(ScrollAnimationService);
-  private elementRef = inject(ElementRef);
-  
-  isVisible: Signal<boolean> = signal(false);
-  
-  constructor() {
+    // DI
+    private scrollService = inject(ScrollAnimationService);
+    private elementRef = inject(ElementRef);
+
+    // Signals
+    isVisible: Signal<boolean> = signal(false);
+
+    technologies: string[] = [
+        'Java',
+        'Python',
+        'JavaScript',
+        'TypeScript',
+        'Spring',
+        'Spring Boot',
+        'Angular',
+        'AWS',
+        'Docker'
+    ];
+
+    constructor() {
     afterNextRender(() => {
-      const visibilitySignal = this.scrollService.observeElement(this.elementRef);
-      // You could also use effect() to react to signal changes if needed
-      this.isVisible = visibilitySignal;
+        const visibilitySignal = this.scrollService.observeElement(this.elementRef);
+        this.isVisible = visibilitySignal;
     });
-  }
-  
-  ngOnDestroy() {
+    }
+
+    ngOnDestroy() {
     this.scrollService.unobserveElement(this.elementRef);
-  }
+    }
 }
