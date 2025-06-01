@@ -45,6 +45,6 @@ export class AboutMeSectionComponent implements OnDestroy {
     }
 
     ngOnDestroy() {
-    this.scrollService.unobserveElement(this.elementRef);
+      this.scrollService.unobserveElement(this.elementRef);
     }
 }

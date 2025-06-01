@@ -1,0 +1,16 @@
+<div class="experience-card-container">
+    <div class="experience-card-title-info-container">
+        <h3 class="experience-card-title">{{ experience().title }}</h3>
+        <label class="experience-card-company">{{ experience().company }}</label>
+    </div>
+
+    <app-label-badge class="duration-badge" [label]="experience().duration" />
+
+    <p class="experience-description">{{ experience().description }}</p>
+
+    <div class="technologies-container">
+        @for (technology of experience().technologies; track technology) {
+            <app-label-badge [label]="technology" />
+        }
+    </div>
+</div>

@@ -1,0 +1,38 @@
+.experience-card-container {
+    width: 80vw;
+    padding: 2.5%;
+    border-radius: 10px;
+    box-shadow: -1px 1px 5px 1px;
+    position: relative;
+}
+
+.experience-card-title-info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: fit-content;
+}
+
+.experience-card-title, .experience-card-company, .experience-description {
+    margin: 0;
+    padding: 0;
+}
+
+.duration-badge {
+    position: absolute;
+    top: 12.5%;
+    right: 2.5%;
+}
+
+.experience-description {
+    margin: 2rem 0;
+    color: gray;
+    font-size: 1.25rem;
+}
+
+.technologies-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    gap: 8px;
+}

@@ -1,13 +1,8 @@
 .landing-page-container {
-    height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-}
-
-
-
-app-main-section {
-    flex: 1;
+    gap: 200px;
+    margin-bottom: 100px;
 }
