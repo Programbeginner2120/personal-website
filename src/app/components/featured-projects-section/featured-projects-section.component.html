@@ -7,7 +7,7 @@
     @if (featuredProjects()) {
         <div class="experience-cards">
             @for (featuredProject of featuredProjects(); track featuredProject) {
-                <div class="placeholder">Placeholder!</div>
+                <app-featured-project-card [featuredProject]="featuredProject" />
             }
         </div>
     }

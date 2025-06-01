@@ -5,10 +5,11 @@ import { toSignal } from '@angular/core/rxjs-interop';
 import { animate, state, style, transition, trigger } from '@angular/animations';
 import { RouteButton } from '../../interfaces/buttons.interface';
 import { FeaturedProject } from '../../interfaces/featured-project.interface';
+import { FeaturedProjectCardComponent } from '../shared/featured-project-card/featured-project-card.component';
 
 @Component({
     selector: 'app-featured-projects-section',
-    imports: [],
+    imports: [FeaturedProjectCardComponent],
     templateUrl: './featured-projects-section.component.html',
     styleUrl: './featured-projects-section.component.scss',
     animations: [

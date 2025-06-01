@@ -1,0 +1,25 @@
+<div class="featured-project-card-container">
+    <div 
+        class="featured-project-card-image-portion"
+        [ngStyle]="{
+            'background-image': 'url(' + featuredProject().imageUri + ')',
+            'background-repeat': 'no-repeat',
+            'background-size': 'cover',
+        }"
+    ></div>
+
+    <div class="featured-project-card-content-portion">
+        <h3 class="featured-project-card-content-title">{{ featuredProject().title }}</h3>
+        <p class="featured-project-card-content-description">{{ featuredProject().description }}</p>
+        <div class="featured-project-card-content-technologies-container">
+            @for (technology of featuredProject().technologies; track technology) {
+                <app-label-badge [label]="technology" />
+            }
+        </div>
+        <div class="featured-project-card-content-buttons-container">
+            @for (button of featuredProject().buttons; track button) {
+                <div>This is a placeholder!</div>
+            }
+        </div>
+    </div>
+</div>
