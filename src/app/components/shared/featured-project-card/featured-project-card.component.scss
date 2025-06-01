@@ -1,12 +1,40 @@
 .featured-project-card-container {
-    height: 700px;
+    min-height: 700px;
     border: 1px solid black;
     border-radius: 10px;
     box-shadow: -1px 1px 5px 1px;
 }
 
 .featured-project-card-image-portion {
-    height: 50%;
+    min-height: 350px;
     width: 100%;
     border-radius: 10px;
+}
+
+.featured-project-card-content-portion {
+    min-height: 350px;
+    padding: 5%;
+}
+
+.featured-project-card-content-title {
+    font-size: 1.5rem;
+}
+
+.featured-project-card-content-description {
+    font-size: 1.25rem;
+    color: gray;
+    line-height: 1.5;
+}
+
+.featured-project-card-content-technologies-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    width: 75%;
+    margin-bottom: 5%;
+}
+
+.featured-project-card-content-buttons-container {
+    display: flex;
+    gap: 8px;
 }
