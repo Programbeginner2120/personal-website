@@ -1,8 +1,7 @@
 <div class="main-section-container">
-    <h1 class="main-section-title">Hi, I'm Matthew Killeen</h1>
+    <h1 class="main-section-title">Hi, I'm {{ name() }}</h1>
     <p class="main-section-description">
-        Full-Stack Software Engineer passionate about building scalable applications
-        and solving complex problems
+        {{ description() }}
     </p>
     <div class="main-section-buttons-container">
         <app-button 
@@ -21,8 +20,10 @@
         />
     </div>
     <div class="main-section-socials-links-container">
-        @for (socialsButton of socialsButtons; track socialsButton) {
-            <app-socials-button [socialsButton]="socialsButton" />
+        @if (socialsButtons()) {
+            @for (socialsButton of socialsButtons(); track socialsButton) {
+                <app-socials-button [socialsButton]="socialsButton" />
+            }
         }
     </div>
 </div>
