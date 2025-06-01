@@ -1,12 +1,14 @@
 <div [@fadeInUp]="isVisible() ? 'visible' : 'hidden'" class="experience-section-container">
     <div class="experience-heading-info-container">
-        <h2 class="experience-heading">Experience</h2>
-        <p class="experience-description">My professional journey and the impact I've made</p>
+        <h2 class="experience-heading">{{ title() }}</h2>
+        <p class="experience-description">{{ description() }}</p>
     </div>
 
-    <div class="experience-cards">
-        @for (experience of experiences; track experience) {
-        <app-experience-card [experience]="experience" />
-        }
-    </div>
+    @if (experiences()) {
+        <div class="experience-cards">
+            @for (experience of experiences(); track experience) {
+            <app-experience-card [experience]="experience" />
+            }
+        </div>
+    }
 </div>

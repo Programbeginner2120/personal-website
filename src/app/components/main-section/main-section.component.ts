@@ -40,7 +40,7 @@ export class MainSectionComponent {
 
     readonly socialsButtons: Signal<SocialsButton[] | undefined> = computed(() => {
         if (!this.mainSectionData()) {
-            return;
+            return [];
         }
 
         const mainSectionData = this.mainSectionData();
