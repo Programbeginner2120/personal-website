@@ -1,9 +1,9 @@
 {
     "title": "Let's Work Together",
     "description": "I'm always interested in new opportunities and exciting projects",
-    "routeButtons": [
+    "socialsButtons": [
         {
-            "href": "mailto:Matthewkilleen99@gmail.com",
+            "href": "Matthewkilleen99@gmail.com",
             "iconClasses": ["fa-solid", "fa-envelope"],
             "label": "Email",
             "displayLink": "Matthewkilleen99@gmail.com",

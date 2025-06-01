@@ -1,3 +1,12 @@
-<div class="networking-section-container" [@fadeInUp]="isVisible() ? 'visible' : 'hidden'">
-    HERE IS SOME SAMPLE CONTENT
+<div [@fadeInUp]="isVisible() ? 'visible' : 'hidden'" class="networking-section-container">
+    <div class="networking-heading-info-container">
+        <h2 class="networking-heading">{{ title() }}</h2>
+        <p class="networking-description">{{ description() }}</p>
+    </div>
+
+    <div class="socials-buttons-container">
+        @for (socialsButton of socialsButtons(); track socialsButton) {
+            <app-socials-button [socialsButton]="socialsButton" mode="card" />
+        }
+    </div>
 </div>

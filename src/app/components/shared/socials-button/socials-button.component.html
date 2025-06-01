@@ -6,7 +6,7 @@
   [ngClass]="mode()"
 >
     @if (hasIconClasses()) {
-        <i [class]="'socials-icon ' + socialsButton().iconClasses"></i>
+        <i class="socials-icon" [ngClass]="iconClassesExtended()"></i>
     } 
     @if (hasLabel()) {
         <div class="socials-label">{{ socialsButton().label }}</div>

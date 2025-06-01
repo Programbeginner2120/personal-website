@@ -24,6 +24,16 @@ export class SocialsButtonComponent {
 
   readonly hasDisplayLink = computed(() => {
     return this.socialsButton().displayLink;
-  })
+  });
+
+  readonly iconClassesExtended = computed(() => {
+  if (this.hasIconClasses()) {
+    if (this.mode() === 'card') {
+      return [...this.socialsButton().iconClasses!, 'fa-4x'];
+    }
+    return this.socialsButton().iconClasses;
+  }
+  return [];
+});
 
 }
