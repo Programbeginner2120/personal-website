@@ -1,7 +1,10 @@
 import { animate, state, style, transition, trigger } from '@angular/animations';
-import { afterNextRender, Component, ElementRef, inject, signal, Signal } from '@angular/core';
+import { afterNextRender, Component, computed, ElementRef, inject, signal, Signal } from '@angular/core';
 import { ScrollAnimationService } from '../../services/shared/scroll-animation/scroll-animation.service';
 import { ExperienceCardComponent } from '../shared/experience-card/experience-card.component';
+import { DataService } from '../../services/shared/data/data.service';
+import { toSignal } from '@angular/core/rxjs-interop';
+import { Experience } from '../../interfaces/experience.interface';
 
 @Component({
     selector: 'app-experience-section',
@@ -21,48 +24,46 @@ export class ExperienceSectionComponent {
     //DI
     private scrollService = inject(ScrollAnimationService);
     private elementRef = inject(ElementRef);
+    private dataService = inject(DataService);
 
     // Signals
     isVisible: Signal<boolean> = signal(false);
 
-    // To be removed later
-    readonly experiences = [
-        {
-            title: 'Software Engineer',
-            company: 'LBi Software',
-            duration: '2024 - Present',
-            description: 'Work with fellow software engineers to build web apps for clients',
-            technologies: [
-                'Java',
-                'SQL',
-                'AWS'
-            ]
-        },
-        {
-            title: 'Software Engineer',
-            company: 'Infosys Limited',
-            duration: '2022 - 2023',
-            description: 'Work with fellow software engineers to build web apps for clients',
-            technologies: [
-                'Java',
-                'SQL',
-                'AWS'
-            ]
-        },
-        {
-            title: 'Undergraduate Researcher',
-            company: 'Data Mining and Management Lab, University at Albany, SUNY',
-            duration: '2021-2022',
-            description: 'Work with fellow researchers on generating ideal forms of nano-clusters using various machine learning techniques.',
-            technologies: [
-                'Python',
-                'PyTorch',
-                'NumPy',
-                'Pandas',
-                'Matplotlib'
-            ]
+    experienceSectionData = toSignal(this.dataService.getData('/assets/website-data/experience-section.json'));
+
+    // Computed
+    title = computed(() => {
+        if (!this.experienceSectionData()) {
+            return;
         }
-    ];
+
+        return this.experienceSectionData()['title'];
+    });
+
+    description = computed(() => {
+        if (!this.experienceSectionData()) {
+            return;
+        }
+
+        return this.experienceSectionData()['description'];
+    });
+
+    experiences = computed(() => {
+        if (!this.experienceSectionData()) {
+            return [];
+        }
+
+        const experiences: any[] = this.experienceSectionData()['experienceCards'];
+        return experiences.map(experience => {
+            return {
+                title: experience['title'],
+                company: experience['company'],
+                duration: experience['duration'],
+                description: experience['description'],
+                technologies: experience['technologies'] as string[]
+            } as Experience
+        });
+    });
 
     constructor() {
         afterNextRender(() => {

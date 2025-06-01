@@ -1,7 +1,9 @@
-import { Component, ElementRef, OnDestroy, Signal, WritableSignal, afterNextRender, inject, input, signal } from '@angular/core';
+import { Component, ElementRef, OnDestroy, Signal, WritableSignal, afterNextRender, computed, inject, input, signal } from '@angular/core';
 import { ScrollAnimationService } from '../../services/shared/scroll-animation/scroll-animation.service';
 import { trigger, state, style, transition, animate } from '@angular/animations';
 import { LabelBadgeComponent } from '../shared/label-badge/label-badge.component';
+import { DataService } from '../../services/shared/data/data.service';
+import { toSignal } from '@angular/core/rxjs-interop';
 
 @Component({
   selector: 'app-about-me-section',
@@ -21,21 +23,45 @@ export class AboutMeSectionComponent implements OnDestroy {
     // DI
     private scrollService = inject(ScrollAnimationService);
     private elementRef = inject(ElementRef);
+    private dataService = inject(DataService);
 
     // Signals
     isVisible: Signal<boolean> = signal(false);
 
-    technologies: string[] = [
-        'Java',
-        'Python',
-        'JavaScript',
-        'TypeScript',
-        'Spring',
-        'Spring Boot',
-        'Angular',
-        'AWS',
-        'Docker'
-    ];
+    aboutMeSectionData = toSignal(this.dataService.getData('/assets/website-data/about-me-section.json'));
+
+    // Computed
+    readonly title = computed(() => {
+      if (!this.aboutMeSectionData()) {
+        return;
+      }
+
+      return this.aboutMeSectionData()['title'];
+    });
+
+    readonly descriptionParagraphs = computed(() => {
+      if (!this.aboutMeSectionData()) {
+        return [];
+      }
+
+      return this.aboutMeSectionData()['descriptionParagraphs'] as string[];
+    });
+
+    readonly technologiesTitle = computed(() => {
+      if (!this.aboutMeSectionData()) {
+        return;
+      }
+
+      return this.aboutMeSectionData()['technologiesTitle'];
+    });
+
+    readonly technologies = computed(() => {
+      if (!this.aboutMeSectionData()) {
+        return [];
+      }
+
+      return this.aboutMeSectionData()['technologies'] as string[];
+    });
 
     constructor() {
     afterNextRender(() => {

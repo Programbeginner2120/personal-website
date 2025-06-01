@@ -1,0 +1,41 @@
+{
+    "title": "Experience",
+    "description": "My professional journey and the impact I've made",
+    "experienceCards": [
+        {
+            "title": "Software Engineer",
+            "company": "LBi Software",
+            "duration": "2024 - Present",
+            "description": "Work with fellow software engineers to build web apps for clients",
+            "technologies": [
+                "Java",
+                "SQL",
+                "AWS"
+            ]
+        },
+        {
+            "title": "Software Engineer",
+            "company": "Infosys Limited",
+            "duration": "2022 - 2023",
+            "description": "Work with fellow software engineers to build web apps for clients",
+            "technologies": [
+                "Java",
+                "SQL",
+                "AWS"
+            ]
+        },
+        {
+            "title": "Undergraduate Researcher",
+            "company": "Data Mining and Management Lab, University at Albany, SUNY",
+            "duration": "2021-2022",
+            "description": "Work with fellow researchers on generating ideal forms of nano-clusters using various machine learning techniques.",
+            "technologies": [
+                "Python",
+                "PyTorch",
+                "NumPy",
+                "Pandas",
+                "Matplotlib"
+            ]
+        }
+    ]
+}

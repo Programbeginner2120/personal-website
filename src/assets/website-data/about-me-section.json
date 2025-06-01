@@ -1,0 +1,19 @@
+{
+    "title": "About Me",
+    "descriptionParagraphs": [
+        "I'm a passionate software engineer with 5+ years of experience building web applications, mobile apps, and distributed systems. I love turning complex problems into simple, beautiful solutions.",
+        "When I'm not coding, you can find me hiking, reading tech blogs, or experimenting with new technologies. I'm always eager to learn and take on new challenges."
+    ],
+    "technologiesTitle": "Technologies I Work With",
+    "technologies": [
+        "Java",
+        "Python",
+        "JavaScript",
+        "TypeScript",
+        "Spring",
+        "Spring Boot",
+        "Angular",
+        "AWS",
+        "Docker"
+    ]
+}
