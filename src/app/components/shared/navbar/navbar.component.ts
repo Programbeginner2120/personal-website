@@ -1,5 +1,5 @@
 import { Component, input } from '@angular/core';
-import { RouteButton } from '../../interfaces/buttons.interface';
+import { RouteButton } from '../../../interfaces/buttons.interface';
 import { RouterModule } from '@angular/router';
 
 @Component({

@@ -1,0 +1,28 @@
+<div class="hamburger-container">
+    <!-- Hamburger Button -->
+    <button 
+    class="hamburger-btn" 
+    [class.active]="isOpen()"
+    (click)="toggleMenu()"
+    aria-label="Toggle navigation menu"
+    [attr.aria-expanded]="isOpen()">
+    <span class="hamburger-line"></span>
+    <span class="hamburger-line"></span>
+    <span class="hamburger-line"></span>
+    </button>
+
+    <!-- Desktop Navigation -->
+    <div class="desktop-nav">
+    <ng-content></ng-content>
+    </div>
+
+    <!-- Mobile Navigation Menu -->
+    <div class="mobile-nav" [class.open]="isOpen()" (click)="handleNavClick($event)">
+    <ng-content></ng-content>
+    </div>
+
+    <!-- Overlay for mobile -->
+    @if (isOpen()) {
+    <div class="overlay" (click)="closeMenu()"></div>
+    }
+</div>
