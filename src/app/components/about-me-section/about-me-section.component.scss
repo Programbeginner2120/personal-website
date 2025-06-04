@@ -1,5 +1,5 @@
 .about-me-section-container {
-    height: calc(100vh - 100px);
+    min-height: calc(100vh - 100px);
     width: 100vw;
     display: flex;
 }
@@ -34,9 +34,38 @@
     border-radius: 10px;
     flex: 1;
     margin: 1.5%;
-    background-image: url('/assets/matthew-killeen-profile-image.jpeg');
-    background-repeat: no-repeat;
-    background-size: cover;
     box-shadow: -4px 4px 10px 2px;
+}
+
+@media(max-width: 768px) {
+
+    .about-me-section-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-me-section-content {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-me-description-paragraph, .technologies-container {
+        width: 100%;
+    }
+
+    .technologies-container {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-me-section-card {
+        display: none;
+    }
+
 }
 

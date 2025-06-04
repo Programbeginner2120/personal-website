@@ -11,11 +11,6 @@
     <span class="hamburger-line"></span>
     </button>
 
-    <!-- Desktop Navigation -->
-    <div class="desktop-nav">
-    <ng-content></ng-content>
-    </div>
-
     <!-- Mobile Navigation Menu -->
     <div class="mobile-nav" [class.open]="isOpen()" (click)="handleNavClick($event)">
     <ng-content></ng-content>

@@ -32,3 +32,11 @@
     align-items: center;
     gap: 24px;
 }
+
+@media(max-width: 768px) {
+
+    .experience-section-container {
+        text-align: center;
+    }
+
+}

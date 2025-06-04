@@ -1,10 +1,5 @@
 <div class="featured-project-card-container">
-    <div 
-        class="featured-project-card-image-portion"
-        [ngStyle]="{
-            'background-image': 'url(' + featuredProject().imageUri + ')'
-        }"
-    ></div>
+    <img class="featured-project-card-image-portion" [src]="featuredProject().imageUri" />
 
     <div class="featured-project-card-content-portion">
         <h3 class="featured-project-card-content-title">{{ featuredProject().title }}</h3>

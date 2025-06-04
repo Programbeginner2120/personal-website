@@ -36,3 +36,27 @@
     width: 50%;
     gap: 8px;
 }
+
+@media(max-width: 768px) {
+
+    .experience-card-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .duration-badge {
+        position: static;
+    }
+
+    .experience-description {
+        margin: 0;
+    }
+
+    .technologies-container {
+        width: 100%;
+    }
+
+} 

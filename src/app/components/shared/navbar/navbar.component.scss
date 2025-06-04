@@ -21,3 +21,10 @@ a {
     color: inherit;
     font-size: 1.5rem;
 }
+
+@media(max-width: 768px) {
+    .main-nav-ul {
+        display: flex;
+        flex-direction: column;
+    }
+}

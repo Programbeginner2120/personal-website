@@ -32,3 +32,18 @@
     gap: 24px;
     margin: 0 5%;
 }
+
+@media(max-width: 768px) {
+
+    .networking-description {
+        text-align: center;
+    }
+    
+    .socials-buttons-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+}

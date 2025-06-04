@@ -32,3 +32,16 @@
     gap: 24px;
     margin: 0 5%;
 }
+
+@media(max-width: 768px) {
+
+    .featured-projects-heading-info-container {
+        text-align: center;
+    }
+
+    .featured-project-cards {
+        display: flex;
+        flex-direction: column;
+    }
+
+}

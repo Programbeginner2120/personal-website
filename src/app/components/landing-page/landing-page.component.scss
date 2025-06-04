@@ -6,3 +6,11 @@
     gap: 200px;
     margin-bottom: 100px;
 }
+
+@media(max-width: 768px) {
+
+    .landing-page-container {
+        gap: 300px;
+    }
+
+}
