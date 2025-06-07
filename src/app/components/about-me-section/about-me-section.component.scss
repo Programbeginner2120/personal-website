@@ -37,7 +37,9 @@
     box-shadow: -4px 4px 10px 2px;
 }
 
-@media(max-width: 768px) {
+/* Extra small devices - portrait phones */
+@media (max-width: 599px) and (orientation: portrait) {
+  /* Styles for portrait phones */
 
     .about-me-section-container {
         display: flex;
@@ -64,8 +66,68 @@
     }
 
     .about-me-section-card {
-        display: none;
+      height: 200px;
+      width: 200px;
+      border-radius: 50%;
+      box-shadow: none;
     }
 
 }
+
+/* Extra small devices - landscape phones */
+@media (max-width: 932px) and (orientation: landscape) {
+  /* Styles for landscape phones */
+
+  .about-me-section-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-me-section-content {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-me-description-paragraph, .technologies-container {
+        width: 100%;
+    }
+
+    .technologies-container {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-me-section-card {
+      height: 200px;
+      width: 200px;
+      border-radius: 50%;
+      box-shadow: none;
+    }
+}
+
+/* Small to medium devices - portrait tablets */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  /* Styles for portrait tablets */
+}
+
+/* Small to medium devices - landscape tablets */
+@media (min-width: 933px) and (max-width: 1024px) and (orientation: landscape) {
+  /* Styles for landscape tablets */
+}
+
+/* Medium to large devices - small desktops or large tablets */
+@media (min-width: 1025px) and (max-width: 1439px) {
+  /* Styles for small desktops or large tablets */
+}
+
+/* Large devices - desktops and up */
+@media (min-width: 1440px) {
+  /* Styles for large desktops and up */
+}
+
 

@@ -15,21 +15,21 @@ export class ScreenService {
 
   constructor() {
     this.breakpointObserver.observe([
-      '(max-width: 480px) and (orientation: portrait)',
-      '(max-width: 767px) and (orientation: landscape)',
+      '(max-width: 599px) and (orientation: portrait)',
+      '(max-width: 932px) and (orientation: landscape)',
       '(min-width: 768px) and (max-width: 1024px) and (orientation: portrait)',
-      '(min-width: 768px) and (max-width: 1024px) and (orientation: landscape)',
+      '(min-width: 933px) and (max-width: 1366px) and (orientation: landscape)',
       '(min-width: 1025px) and (max-width: 1439px)',
       '(min-width: 1440px)'
     ]).subscribe(result => {
       const bp = result.breakpoints;
-      if (bp['(max-width: 480px) and (orientation: portrait)']) {
+      if (bp['(max-width: 599px) and (orientation: portrait)']) {
         this.screenModeSubject.next('phone-portrait');
-      } else if (bp['(max-width: 767px) and (orientation: landscape)']) {
+      } else if (bp['(max-width: 932px) and (orientation: landscape)']) {
         this.screenModeSubject.next('phone-landscape');
       } else if (bp['(min-width: 768px) and (max-width: 1024px) and (orientation: portrait)']) {
         this.screenModeSubject.next('tablet-portrait');
-      } else if (bp['(min-width: 768px) and (max-width: 1024px) and (orientation: landscape)']) {
+      } else if (bp['(min-width: 933px) and (max-width: 1366px) and (orientation: landscape)']) {
         this.screenModeSubject.next('tablet-landscape');
       } else if (bp['(min-width: 1025px) and (max-width: 1439px)']) {
         this.screenModeSubject.next('small-desktop');
