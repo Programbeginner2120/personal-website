@@ -65,6 +65,26 @@
 /* Extra small devices - landscape phones */
 @media (max-width: 932px) and (orientation: landscape) {
   /* Styles for landscape phones */
+
+  .experience-card-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .duration-badge {
+        position: static;
+    }
+
+    .experience-description {
+        margin: 0;
+    }
+
+    .technologies-container {
+        width: 100%;
+    }
 }
 
 /* Small to medium devices - portrait tablets */

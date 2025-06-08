@@ -20,7 +20,7 @@ export class ScrollAnimationService {
     const isVisible = signal(false);
     
     const defaultOptions: IntersectionObserverInit = {
-      threshold: 0.1,
+      threshold: 0,
       rootMargin: '0px 0px -50px 0px',
       ...options
     };
