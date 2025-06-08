@@ -65,11 +65,47 @@
 /* Small to medium devices - portrait tablets */
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
   /* Styles for portrait tablets */
+
+  .featured-projects-heading {
+    font-size: 3rem;
+  }
+
+  .featured-projects-description {
+    font-size: 2rem;
+  }
+
+  .featured-project-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Changed from center */
+    align-items: center;
+    flex: 1; /* Take remaining space */
+    gap: 1rem;
+    overflow-y: auto; /* Allow scrolling if content overflows */
+  }
 }
 
 /* Small to medium devices - landscape tablets */
 @media (min-width: 933px) and (max-width: 1366px) and (orientation: landscape) {
   /* Styles for landscape tablets */
+
+  .featured-projects-heading {
+    font-size: 3rem;
+  }
+
+  .featured-projects-description {
+    font-size: 2rem;
+  }
+
+  .featured-project-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Changed from center */
+    align-items: center;
+    flex: 1; /* Take remaining space */
+    gap: 1rem;
+    overflow-y: auto; /* Allow scrolling if content overflows */
+  }
 }
 
 /* Medium to large devices - small desktops or large tablets */

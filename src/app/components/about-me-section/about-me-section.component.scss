@@ -113,11 +113,87 @@
 /* Small to medium devices - portrait tablets */
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
   /* Styles for portrait tablets */
+
+  .about-me-heading, .technologies-heading {
+    font-size: 3rem;
+}
+
+  .about-me-section-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-me-section-content {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-me-description-paragraph, .technologies-container {
+        width: 100%;
+    }
+
+    .about-me-description-paragraph {
+      font-size: 2rem;
+    }
+
+    .technologies-container {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-me-section-card {
+      width: 90vw;
+      border-radius: 50%;
+      box-shadow: none;
+    }
 }
 
 /* Small to medium devices - landscape tablets */
-@media (min-width: 933px) and (max-width: 1024px) and (orientation: landscape) {
+@media (min-width: 933px) and (max-width: 1366px) and (orientation: landscape) {
   /* Styles for landscape tablets */
+
+  .about-me-heading, .technologies-heading {
+    font-size: 3rem;
+}
+
+  .about-me-section-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-me-section-content {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-me-description-paragraph, .technologies-container {
+        width: 100%;
+    }
+
+    .about-me-description-paragraph {
+      font-size: 2rem;
+    }
+
+    .technologies-container {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-me-section-card {
+      width: 90vw;
+      border-radius: 50%;
+      box-shadow: none;
+    }
 }
 
 /* Medium to large devices - small desktops or large tablets */

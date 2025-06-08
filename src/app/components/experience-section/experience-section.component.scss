@@ -50,6 +50,14 @@
 /* Small to medium devices - portrait tablets */
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
   /* Styles for portrait tablets */
+
+  .experience-heading {
+    font-size: 3rem;
+  }
+
+  .experience-description {
+    font-size: 2rem;
+  }
 }
 
 /* Small to medium devices - landscape tablets */

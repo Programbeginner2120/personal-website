@@ -58,6 +58,14 @@
 /* Small to medium devices - portrait tablets */
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
   /* Styles for portrait tablets */
+
+  .main-section-title {
+    font-size: 6rem;
+  }
+
+  .main-section-description {
+    font-size: 3rem;
+  }
 }
 
 /* Small to medium devices - landscape tablets */
