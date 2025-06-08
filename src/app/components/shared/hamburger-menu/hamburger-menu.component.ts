@@ -1,14 +1,16 @@
-import { Component, signal } from '@angular/core';
+import { Component, input, signal } from '@angular/core';
 import { RouteButton } from '../../../interfaces/buttons.interface';
-import { NavbarComponent } from '../navbar/navbar.component';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-hamburger-menu',
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './hamburger-menu.component.html',
   styleUrl: './hamburger-menu.component.scss'
 })
 export class HamburgerMenuComponent {
+  readonly routeButtons = input.required<RouteButton[]>()
+
   isOpen = signal(false);
 
   toggleMenu() {

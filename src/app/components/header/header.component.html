@@ -4,9 +4,7 @@
         @if (['small-desktop', 'large-desktop'].includes(screenMode()!)) {
             <app-navbar [routeButtons]="routeButtons()" />
         } @else {
-            <app-hamburger-menu>
-                <app-navbar [routeButtons]="routeButtons()" />
-            </app-hamburger-menu>
+            <app-hamburger-menu [routeButtons]="routeButtons()" />
         }
     }
 </div>
