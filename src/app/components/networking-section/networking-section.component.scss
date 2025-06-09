@@ -32,3 +32,66 @@
     gap: 24px;
     margin: 0 5%;
 }
+
+/* Extra small devices - portrait phones */
+@media (max-width: 599px) and (orientation: portrait) {
+  /* Styles for portrait phones */
+
+  .networking-description {
+      text-align: center;
+  }
+    
+  .socials-buttons-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+}
+
+/* Extra small devices - landscape phones */
+@media (max-width: 932px) and (orientation: landscape) {
+  /* Styles for landscape phones */
+
+  .networking-description {
+      text-align: center;
+  }
+    
+  .socials-buttons-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+}
+
+/* Small to medium devices - portrait tablets */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  /* Styles for portrait tablets */
+
+  .networking-description {
+      text-align: center;
+  }
+    
+  .socials-buttons-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+}
+
+/* Small to medium devices - landscape tablets */
+@media (min-width: 933px) and (max-width: 1366px) and (orientation: landscape) {
+  /* Styles for landscape tablets */
+}
+
+/* Medium to large devices - small desktops or large tablets */
+@media (min-width: 1025px) and (max-width: 1439px) {
+  /* Styles for small desktops or large tablets */
+}
+
+/* Large devices - desktops and up */
+@media (min-width: 1440px) {
+  /* Styles for large desktops and up */
+}

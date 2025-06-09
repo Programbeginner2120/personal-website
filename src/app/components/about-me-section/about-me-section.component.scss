@@ -1,5 +1,5 @@
 .about-me-section-container {
-    height: calc(100vh - 100px);
+    min-height: calc(100vh - 100px);
     width: 100vw;
     display: flex;
 }
@@ -34,9 +34,176 @@
     border-radius: 10px;
     flex: 1;
     margin: 1.5%;
-    background-image: url('/assets/matthew-killeen-profile-image.jpeg');
-    background-repeat: no-repeat;
-    background-size: cover;
     box-shadow: -4px 4px 10px 2px;
 }
+
+/* Extra small devices - portrait phones */
+@media (max-width: 599px) and (orientation: portrait) {
+  /* Styles for portrait phones */
+
+    .about-me-section-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-me-section-content {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-me-description-paragraph, .technologies-container {
+        width: 100%;
+    }
+
+    .technologies-container {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-me-section-card {
+      height: 200px;
+      width: 200px;
+      border-radius: 50%;
+      box-shadow: none;
+    }
+
+}
+
+/* Extra small devices - landscape phones */
+@media (max-width: 932px) and (orientation: landscape) {
+  /* Styles for landscape phones */
+
+  .about-me-section-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-me-section-content {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-me-description-paragraph, .technologies-container {
+        width: 100%;
+    }
+
+    .technologies-container {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-me-section-card {
+      height: 200px;
+      width: 200px;
+      border-radius: 50%;
+      box-shadow: none;
+    }
+}
+
+/* Small to medium devices - portrait tablets */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  /* Styles for portrait tablets */
+
+  .about-me-heading, .technologies-heading {
+    font-size: 3rem;
+}
+
+  .about-me-section-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-me-section-content {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-me-description-paragraph, .technologies-container {
+        width: 100%;
+    }
+
+    .about-me-description-paragraph {
+      font-size: 2rem;
+    }
+
+    .technologies-container {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-me-section-card {
+      width: 90vw;
+      border-radius: 50%;
+      box-shadow: none;
+    }
+}
+
+/* Small to medium devices - landscape tablets */
+@media (min-width: 933px) and (max-width: 1366px) and (orientation: landscape) {
+  /* Styles for landscape tablets */
+
+  .about-me-heading, .technologies-heading {
+    font-size: 3rem;
+}
+
+  .about-me-section-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-me-section-content {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-me-description-paragraph, .technologies-container {
+        width: 100%;
+    }
+
+    .about-me-description-paragraph {
+      font-size: 2rem;
+    }
+
+    .technologies-container {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-me-section-card {
+      width: 90vw;
+      border-radius: 50%;
+      box-shadow: none;
+    }
+}
+
+/* Medium to large devices - small desktops or large tablets */
+@media (min-width: 1025px) and (max-width: 1439px) {
+  /* Styles for small desktops or large tablets */
+}
+
+/* Large devices - desktops and up */
+@media (min-width: 1440px) {
+  /* Styles for large desktops and up */
+}
+
 

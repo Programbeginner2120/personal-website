@@ -36,3 +36,81 @@
     width: 50%;
     gap: 8px;
 }
+
+/* Extra small devices - portrait phones */
+@media (max-width: 599px) and (orientation: portrait) {
+  /* Styles for portrait phones */
+
+  .experience-card-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .duration-badge {
+        position: static;
+    }
+
+    .experience-description {
+        margin: 0;
+    }
+
+    .technologies-container {
+        width: 100%;
+    }
+}
+
+/* Extra small devices - landscape phones */
+@media (max-width: 932px) and (orientation: landscape) {
+  /* Styles for landscape phones */
+
+  .experience-card-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+    }
+
+    .duration-badge {
+        position: static;
+    }
+
+    .experience-description {
+        margin: 0;
+    }
+
+    .technologies-container {
+        width: 100%;
+    }
+}
+
+/* Small to medium devices - portrait tablets */
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  /* Styles for portrait tablets */
+
+  .experience-card-title {
+    font-size: 2rem;
+  }
+
+  .experience-card-company, .experience-description {
+    font-size: 1.5rem;
+  }
+}
+
+/* Small to medium devices - landscape tablets */
+@media (min-width: 933px) and (max-width: 1366px) and (orientation: landscape) {
+  /* Styles for landscape tablets */
+}
+
+/* Medium to large devices - small desktops or large tablets */
+@media (min-width: 1025px) and (max-width: 1439px) {
+  /* Styles for small desktops or large tablets */
+}
+
+/* Large devices - desktops and up */
+@media (min-width: 1440px) {
+  /* Styles for large desktops and up */
+}

@@ -4,6 +4,7 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
 import { LabelBadgeComponent } from '../shared/label-badge/label-badge.component';
 import { DataService } from '../../services/shared/data/data.service';
 import { toSignal } from '@angular/core/rxjs-interop';
+import { ScreenService } from '../../services/shared/screen/screen.service';
 
 @Component({
   selector: 'app-about-me-section',
@@ -24,11 +25,14 @@ export class AboutMeSectionComponent implements OnDestroy {
     private scrollService = inject(ScrollAnimationService);
     private elementRef = inject(ElementRef);
     private dataService = inject(DataService);
+    private screenService = inject(ScreenService);
 
     // Signals
     isVisible: Signal<boolean> = signal(false);
 
     aboutMeSectionData = toSignal(this.dataService.getData('/assets/website-data/about-me-section.json'));
+
+    screenMode = toSignal(this.screenService.screenMode$);
 
     // Computed
     readonly title = computed(() => {
