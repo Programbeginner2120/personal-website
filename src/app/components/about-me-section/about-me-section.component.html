@@ -1,7 +1,7 @@
 <!-- about-me-section.component.html -->
 <div [@fadeInUp]="isVisible() ? 'visible' : 'hidden'" class="about-me-section-container">
     @if (screenMode() && ['phone-portrait', 'phone-landscape', 'tablet-portrait', 'tablet-landscape'].includes(screenMode()!)) {
-        <img class="about-me-section-card" src="browser/assets/matthew-killeen-profile-image.jpeg" />
+        <img class="about-me-section-card" src="/browser/assets/matthew-killeen-profile-image.jpeg" />
     }
     <div class="about-me-section-content">
         <h2 class="about-me-heading">{{ title() }}</h2>
