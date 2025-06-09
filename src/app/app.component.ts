@@ -15,8 +15,9 @@ export class AppComponent {
 
   navButtons: RouteButton[] = [
     { label: 'Home', route: '/' },
-    { label: 'About Section', fragment: 'about' },
-    { label: 'Contact Page', route: '/contact' },
-    { label: 'External Docs', route: 'https://example.com/docs', external: true },
+    { label: 'About Me', fragment: 'about' },
+    { label: 'Experience', fragment: 'experience' },
+    { label: 'Featured Projects', fragment: 'featured-projects'},
+    { label: "Let's Connect", fragment: 'lets-connect'}
   ];
 }
