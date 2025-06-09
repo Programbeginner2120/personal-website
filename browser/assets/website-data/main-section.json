@@ -1,0 +1,21 @@
+{
+    "name": "Matthew Killeen",
+    "description": "Full-Stack Software Engineer passionate about building scalable applications and solving complex problems",
+    "socialsButtons": [
+        {
+            "href": "https://github.com/Programbeginner2120",
+            "iconClasses": ["fab", "fa-github"],
+            "isEmail": false
+        },
+        {
+            "href": "https://www.linkedin.com/in/matthew-r-killeen",
+            "iconClasses": ["fab", "fa-linkedin"],
+            "isEmail": false
+        },
+        {
+            "href": "Matthewkilleen99@gmail.com",
+            "iconClasses": ["fa-solid", "fa-envelope"],
+            "isEmail": true
+        }
+    ]
+}

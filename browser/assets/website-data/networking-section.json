@@ -1,0 +1,27 @@
+{
+    "title": "Let's Work Together",
+    "description": "I'm always interested in new opportunities and exciting projects",
+    "socialsButtons": [
+        {
+            "href": "Matthewkilleen99@gmail.com",
+            "iconClasses": ["fa-solid", "fa-envelope"],
+            "label": "Email",
+            "displayLink": "Matthewkilleen99@gmail.com",
+            "isEmail": true
+        },
+        {
+            "href": "https://www.linkedin.com/in/matthew-r-killeen",
+            "iconClasses": ["fab", "fa-linkedin"],
+            "label": "LinkedIn",
+            "displayLink": "linkedin.com/in/matthew-r-killeen",
+            "isEmail": false
+        },
+        {
+            "href": "https://github.com/Programbeginner2120",
+            "iconClasses": ["fab", "fa-github"],
+            "label": "GitHub",
+            "displayLink": "github.com/Programbeginner2120",
+            "isEmail": false
+        }
+    ]
+}
