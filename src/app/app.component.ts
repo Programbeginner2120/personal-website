@@ -17,7 +17,7 @@ export class AppComponent {
     { label: 'Home', route: '/' },
     { label: 'About Me', fragment: 'about' },
     { label: 'Experience', fragment: 'experience' },
-    { label: 'Featured Projects', fragment: 'featured-projects'},
+    // { label: 'Featured Projects', fragment: 'featured-projects'},
     { label: "Let's Connect", fragment: 'lets-connect'}
   ];
 }

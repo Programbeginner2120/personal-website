@@ -56,13 +56,12 @@ export class MainSectionComponent {
         });
     });
 
-    handleButtonClick() {
-        console.log("BUTTON CLICKED!");
-    }
+    // handleButtonClick() {
+    //     console.log("BUTTON CLICKED!");
+    // }
 
     handleDownloadButtonClick(request: FileDownloadRequest) {
         this.fileDownloadService.downloadFile(request.fileUri, request.filename);
-        console.log("DOWNLOAD BUTTON CLICKED!");
     }
 
 }
