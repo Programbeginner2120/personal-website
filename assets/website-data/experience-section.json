@@ -6,9 +6,12 @@
             "title": "Software Engineer",
             "company": "LBi Software",
             "duration": "2024 - Present",
-            "description": "Work with fellow software engineers to build web apps for clients",
+            "description": "Build and maintain web / mobile applications spanning across multiple sports leagues and enterprises.",
             "technologies": [
                 "Java",
+                "Angular",
+                "TypeScript",
+                "JavaScript",
                 "SQL",
                 "AWS"
             ]
@@ -17,9 +20,12 @@
             "title": "Software Engineer",
             "company": "Infosys Limited",
             "duration": "2022 - 2023",
-            "description": "Work with fellow software engineers to build web apps for clients",
+            "description": "Work with fellow software engineers to build web applications for clients.",
             "technologies": [
                 "Java",
+                "Angular",
+                "TypeScript",
+                "JavaScript",
                 "SQL",
                 "AWS"
             ]
