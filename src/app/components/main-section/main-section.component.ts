@@ -10,7 +10,7 @@ import { toSignal } from '@angular/core/rxjs-interop';
 
 @Component({
     selector: 'app-main-section',
-    imports: [SocialsButtonComponent, AppButtonComponent, AppDownloadButtonComponent],
+    imports: [SocialsButtonComponent, AppDownloadButtonComponent],
     templateUrl: './main-section.component.html',
     styleUrl: './main-section.component.scss'
 })
