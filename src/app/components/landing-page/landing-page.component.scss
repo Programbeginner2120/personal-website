@@ -7,6 +7,16 @@
     margin-bottom: 100px;
 }
 
+app-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+app-navbar {
+  flex-shrink: 0; /* don't shrink the navbar */
+}
+
 /* Extra small devices - portrait phones */
 @media (max-width: 599px) and (orientation: portrait) {
   /* Styles for portrait phones */

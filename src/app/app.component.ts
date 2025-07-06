@@ -6,18 +6,10 @@ import { FooterComponent } from './components/footer/footer.component';
 
 @Component({
     selector: 'app-root',
-    imports: [RouterOutlet, HeaderComponent, FooterComponent],
+    imports: [RouterOutlet],
     templateUrl: './app.component.html',
     styleUrl: './app.component.scss'
 })
 export class AppComponent {
   title = 'personal-website';
-
-  navButtons: RouteButton[] = [
-    { label: 'Home', route: '/' },
-    { label: 'About Me', fragment: 'about' },
-    { label: 'Experience', fragment: 'experience' },
-    // { label: 'Featured Projects', fragment: 'featured-projects'},
-    { label: "Let's Connect", fragment: 'lets-connect'}
-  ];
 }
