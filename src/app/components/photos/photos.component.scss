@@ -4,6 +4,41 @@ app-header {
   z-index: 100;
 }
 
+.photos-container {
+  min-height: calc(100vh - 100px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.photos-heading {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+.photos-description {
+  font-size: 1.25rem;
+  color: gray;
+}
+
+.photos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 400px;
+  height: 100%;
+  width: 90%;
+  gap: 20px;
+}
+
+.foobar {
+  border: 1px solid black;
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+}
+
 app-navbar {
   flex-shrink: 0; /* don't shrink the navbar */
 }

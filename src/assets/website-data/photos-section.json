@@ -1,0 +1,36 @@
+{
+    "title": "A Snapshot of My Life",
+    "description": "A look into some of my most memorable moments",
+    "photos": [
+        {
+            "photoUrl": "assets/matthew-killeen-profile-image.jpeg"
+        },
+        {
+            "photoUrl": "assets/matthew-killeen-profile-image.jpeg"
+        },
+        {
+            "photoUrl": "assets/matthew-killeen-profile-image.jpeg"
+        },
+        {
+            "photoUrl": "assets/matthew-killeen-profile-image.jpeg"
+        },
+        {
+            "photoUrl": "assets/matthew-killeen-profile-image.jpeg"
+        },
+        {
+            "photoUrl": "assets/matthew-killeen-profile-image.jpeg"
+        },
+        {
+            "photoUrl": "assets/matthew-killeen-profile-image.jpeg"
+        },
+        {
+            "photoUrl": "assets/matthew-killeen-profile-image.jpeg"
+        },
+        {
+            "photoUrl": "assets/matthew-killeen-profile-image.jpeg"
+        },
+        {
+            "photoUrl": "assets/matthew-killeen-profile-image.jpeg"
+        }
+    ]
+}
