@@ -3,22 +3,28 @@
     "description": "A look into some of my most memorable moments",
     "photos": [
         {
-            "photoUrl": "assets/matthew-killeen-profile-image.jpeg"
+            "photoUrl": "assets/photos/photo-1.jpeg"
         },
         {
-            "photoUrl": "assets/matthew-killeen-profile-image.jpeg"
+            "photoUrl": "assets/photos/photo-2.jpeg"
         },
         {
-            "photoUrl": "assets/matthew-killeen-profile-image.jpeg"
+            "photoUrl": "assets/photos/photo-3.jpeg"
         },
         {
-            "photoUrl": "assets/matthew-killeen-profile-image.jpeg"
+            "photoUrl": "assets/photos/photo-4.jpeg"
         },
         {
-            "photoUrl": "assets/matthew-killeen-profile-image.jpeg"
+            "photoUrl": "assets/photos/photo-5.jpeg"
         },
         {
-            "photoUrl": "assets/matthew-killeen-profile-image.jpeg"
+            "photoUrl": "assets/photos/photo-6.jpeg"
+        },
+        {
+            "photoUrl": "assets/photos/photo-7.jpeg"
+        },
+        {
+            "photoUrl": "assets/photos/photo-8.jpeg"
         },
         {
             "photoUrl": "assets/matthew-killeen-profile-image.jpeg"
