@@ -14,8 +14,7 @@ export const appConfig: ApplicationConfig = {
     withInMemoryScrolling({
       scrollPositionRestoration: 'enabled',
       anchorScrolling: 'enabled',
-    }),
-    withHashLocation()), 
+    })),
     provideClientHydration(),
     provideAnimations(),
     provideHttpClient(withFetch())
