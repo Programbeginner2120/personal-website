@@ -1,0 +1,17 @@
+<app-header headerTitle="Matthew Killeen" [routeButtons]="navButtons" />
+
+<div class="photos-container">
+    <h2 class="photos-heading">{{ title() }}</h2>
+    <div class="photos-description-container">
+        <p class="photos-description">
+            {{ description() }}
+        </p>
+    </div>
+    <div class="photos">
+        @for (photo of photos(); track photo) {
+            <app-photo [photo]="photo" />
+        }
+    </div>
+</div>
+
+<app-footer></app-footer>
