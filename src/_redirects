@@ -1,11 +1,1 @@
 /*    /index.html   200
-
-# Don't redirect assets
-/assets/*  200
-/*.js      200
-/*.css     200
-/*.woff2   200
-/*.woff    200
-/*.ttf     200
-/*.eot     200
-/*.ico     200
