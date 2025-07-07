@@ -60,7 +60,7 @@
                 "scripts": true,
                 "styles": false,
                 "fonts": true
-              },
+              }
             },
             "development": {
               "optimization": false,
