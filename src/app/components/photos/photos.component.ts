@@ -22,7 +22,7 @@ export class PhotosComponent {
 
   // Constants
   navButtons: RouteButton[] = [
-    { label: "Main Page", route: '/landing-page'}
+    { label: "Main Page", route: 'landing-page'}
   ];
 
   // Signals

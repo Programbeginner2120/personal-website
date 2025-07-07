@@ -22,7 +22,7 @@ export class LandingPageComponent {
     { label: 'Experience', fragment: 'experience' },
     // { label: 'Featured Projects', fragment: 'featured-projects'},
     { label: "Let's Connect", fragment: 'lets-connect'},
-    { label: "Photos", route: '/photos'}
+    { label: "Photos", route: 'photos'}
   ];
 
 }
