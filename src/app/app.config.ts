@@ -3,7 +3,7 @@ import { provideRouter, withHashLocation, withInMemoryScrolling } from '@angular
 
 import { routes } from './app.routes';
 import { provideClientHydration } from '@angular/platform-browser';
-import { provideAnimations, provideNoopAnimations } from '@angular/platform-browser/animations';
+import { provideAnimations } from '@angular/platform-browser/animations';
 import { provideHttpClient, withFetch } from '@angular/common/http';
 
 export const appConfig: ApplicationConfig = {
@@ -16,7 +16,7 @@ export const appConfig: ApplicationConfig = {
       anchorScrolling: 'enabled',
     })),
     provideClientHydration(),
-    provideNoopAnimations(),
+    provideAnimations(),
     provideHttpClient(withFetch())
   ]
 };
