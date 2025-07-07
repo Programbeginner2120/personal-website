@@ -1,0 +1,56 @@
+.photo-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.photo {
+  z-index: 0;
+  border: 1px solid black;
+  border-radius: 10px;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease, filter 0.6s ease; /* ← slower */
+}
+
+.photo-title-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Title at bottom */
+.photo-title {
+  position: absolute;
+  bottom: 0;
+  font-size: 1.25rem;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+  color: lightgray;
+}
+
+.photo-title-desktop {
+  transition: transform 0.6s ease, opacity 0.6s ease;
+  width: 100%;
+  display: none;
+}
+
+// .photo-title-mobile-tablet {
+//   width: 80%;
+//   background-color: #333;
+//   border-radius: 10px;
+//   margin-bottom: 20px;
+// }
+
+/* Hover effect */
+.photo-container:hover .photo {
+  transform: translateY(-10px); /* move upward */
+  filter: grayscale(50%) brightness(50%); /* light gray tone */
+}
+
+.photo-container:hover .photo-title-desktop {
+  transform: translateY(-10px);
+  display: block;
+}

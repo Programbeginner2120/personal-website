@@ -3,40 +3,52 @@
     "description": "A look into some of my most memorable moments",
     "photos": [
         {
-            "photoUrl": "assets/photos/photo-1.jpeg"
+            "photoUrl": "assets/photos/photo-1.jpeg",
+            "photoTitle": "A Run-In with Master Roshi"
         },
         {
-            "photoUrl": "assets/photos/photo-2.jpeg"
+            "photoUrl": "assets/photos/photo-2.jpeg",
+            "photoTitle": "Enjoying Dinner in Astoria"
         },
         {
-            "photoUrl": "assets/photos/photo-3.jpeg"
+            "photoUrl": "assets/photos/photo-3.jpeg",
+            "photoTitle": "Cooper Lazing Around"
         },
         {
-            "photoUrl": "assets/photos/photo-4.jpeg"
+            "photoUrl": "assets/photos/photo-4.jpeg",
+            "photoTitle": "Dad and I Getting Pizza"
         },
         {
-            "photoUrl": "assets/photos/photo-5.jpeg"
+            "photoUrl": "assets/photos/photo-5.jpeg",
+            "photoTitle": "Caitin and I Sightseeing"
         },
         {
-            "photoUrl": "assets/photos/photo-6.jpeg"
+            "photoUrl": "assets/photos/photo-6.jpeg",
+            "photoTitle": "Selfie at the Trevi Fountain"
         },
         {
-            "photoUrl": "assets/photos/photo-7.jpeg"
+            "photoUrl": "assets/photos/photo-7.jpeg",
+            "photoTitle": "Puppy Cooper Ripping Up Toilet Paper"
         },
         {
-            "photoUrl": "assets/photos/photo-8.jpeg"
+            "photoUrl": "assets/photos/photo-8.jpeg",
+            "photoTitle": "Family at Harbes"
         },
         {
-            "photoUrl": "assets/photos/photo-9.jpeg"
+            "photoUrl": "assets/photos/photo-9.jpeg",
+            "photoTitle": "My Eagle Scout Ceremony"
         },
         {
-            "photoUrl": "assets/photos/photo-10.jpeg"
+            "photoUrl": "assets/photos/photo-10.jpeg",
+            "photoTitle": "A Classic Throwback"
         },
         {
-            "photoUrl": "assets/photos/photo-11.jpeg"
+            "photoUrl": "assets/photos/photo-11.jpeg",
+            "photoTitle": "Group Photo in Florence"
         },
         {
-            "photoUrl": "assets/photos/photo-12.jpeg"
+            "photoUrl": "assets/photos/photo-12.jpeg",
+            "photoTitle": "Cooper Peeking at My Work"
         }
     ]
 }

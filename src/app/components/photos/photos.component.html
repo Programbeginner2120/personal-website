@@ -9,7 +9,7 @@
     </div>
     <div class="photos">
         @for (photo of photos(); track photo) {
-            <img class="image" [src]=photo.photoUrl />
+            <app-photo [photo]="photo" />
         }
     </div>
 </div>

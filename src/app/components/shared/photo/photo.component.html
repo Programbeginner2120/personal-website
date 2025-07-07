@@ -1,0 +1,12 @@
+<div class="photo-container">
+    <img class="photo" [src]=photo().photoUrl />
+    <div class="photo-title-container">
+    @if (screenMode()) {
+        @if (['small-desktop', 'large-desktop'].includes(screenMode()!)) {
+            <div class="photo-title photo-title-desktop"> {{ photo().photoTitle }}</div>
+        } @else {
+            <!-- <div class="photo-title photo-title-mobile-tablet"> {{ photo().photoTitle }}</div> -->
+        }
+    }
+    </div>
+</div>

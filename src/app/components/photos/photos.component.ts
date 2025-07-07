@@ -6,10 +6,11 @@ import { toSignal } from '@angular/core/rxjs-interop';
 import { DataService } from '../../services/shared/data/data.service';
 import { ScreenService } from '../../services/shared/screen/screen.service';
 import { Photo } from '../../interfaces/photos.interface';
+import { PhotoComponent } from '../shared/photo/photo.component';
 
 @Component({
   selector: 'app-photos',
-  imports: [HeaderComponent, FooterComponent],
+  imports: [HeaderComponent, FooterComponent, PhotoComponent],
   templateUrl: './photos.component.html',
   styleUrl: './photos.component.scss'
 })
@@ -53,6 +54,7 @@ export class PhotosComponent {
       .map(photo => {
         return {
           photoUrl: photo.photoUrl,
+          photoTitle: photo.photoTitle,
           height: photo.height,
           width: photo.width
         } as Photo
