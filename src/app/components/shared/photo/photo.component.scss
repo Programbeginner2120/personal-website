@@ -29,20 +29,10 @@
   padding: 10px;
   font-weight: bold;
   color: lightgray;
-}
-
-.photo-title-desktop {
   transition: transform 0.6s ease, opacity 0.6s ease;
   width: 100%;
   display: none;
 }
-
-// .photo-title-mobile-tablet {
-//   width: 80%;
-//   background-color: #333;
-//   border-radius: 10px;
-//   margin-bottom: 20px;
-// }
 
 /* Hover effect */
 .photo-container:hover .photo {
@@ -50,7 +40,7 @@
   filter: grayscale(50%) brightness(50%); /* light gray tone */
 }
 
-.photo-container:hover .photo-title-desktop {
+.photo-container:hover .photo-title {
   transform: translateY(-10px);
   display: block;
 }
