@@ -10,7 +10,7 @@ export class ScreenService {
   // DI
   private breakpointObserver = inject(BreakpointObserver);
 
-  private screenModeSubject = new BehaviorSubject<ScreenMode>('large-desktop');
+  private screenModeSubject = new BehaviorSubject<ScreenMode | null>(null);
   screenMode$ = this.screenModeSubject.asObservable();
 
   constructor() {
